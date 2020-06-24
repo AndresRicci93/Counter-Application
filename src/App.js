@@ -1,8 +1,9 @@
 import React from "react";
-import Button from "./Button.js";
-import DecButton from "./DecButton.js";
-import SaveButton from "./SaveButton.js";
-import ResButton from "./ResButton.js";
+import Button from "./Components/Button/Button.js";
+
+import DecButton from "./Components/DecButton/DecButton.js";
+import SaveButton from "./Components/SaveButton/SaveButton.js";
+import ResButton from "./Components/ResButton/ResButton.js";
 import { useState } from "react";
 import "./App.css";
 
@@ -51,8 +52,13 @@ function App() {
       <span>{count}</span>
       <br />
       <br />
-      <h2>Results:</h2>
-      <span>{resultList.join(", ")}</span>
+      <h2>RESULTS:</h2>
+      <span >
+        <div class="container">
+
+        {resultList.join(" ")}
+        </div>
+      </span>
       <br />
     </div>
   );
