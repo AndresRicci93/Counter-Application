@@ -8,7 +8,7 @@ Button {
     border-width: 0px;
     border-radius: 4px;
     background-color: #436f8a;
-    
+    color: white;
 }
 
 Button:focus {
